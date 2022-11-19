@@ -5,6 +5,6 @@
     )    
 )
 
-(print "Number: ")
+(format t "Number: ")
 (setq number (read))
 (print (factorial number))
