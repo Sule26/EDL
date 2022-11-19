@@ -1,0 +1,25 @@
+(defun StageOfLife(age)
+    (princ
+        (cond
+            ((< age 0) "Never-Born")
+            ((<= age 3) "Infacy")
+            ((<= age 6) "Early Childhood") 
+            ((<= age 8) "Middle Childhood") 
+            ((<= age 11) "Late Childhood") 
+            ((<= age 20) "Adolescence") 
+            ((<= age 35) "Early Adulthood")
+            ((<= age 50) "Midlife") 
+            ((<= age 80) "Mature Adulthood") 
+            ((> age 80) "Late Adulthood") 
+                   
+        )
+    )
+)
+
+(terpri)
+(format t "How old are you? ")
+(setq age (read))
+(terpri)
+(format t "You are in ")
+(StageOfLife age)
+(terpri)
